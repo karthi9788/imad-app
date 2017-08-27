@@ -5,10 +5,25 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+app.get('/', function (req, res){
+    res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+app.get('/article one',function(req,res){
+ res.send('Article one is requested and it it is ready to response');   
+});
+
+app.get('/article two',function(req,res){
+ res.send('Article two is requested and it it is ready to response');   
+});
+
+app.get('/article three',function(req,res){
+ res.send('Article three is requested and it it is ready to response');   
+});
+
+app.get('/article four',function(req,res){
+ res.send('Article four is requested and it it is ready to response');   
+});
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
