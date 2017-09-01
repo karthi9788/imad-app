@@ -1,7 +1,7 @@
 console.log('Loaded!');
 var imag = document.getElementById("madi");
 var marginleft =0;
-function moveRight(){
+function moveRight () {
     marginleft = marginleft+10;
     madi.style.marginleft = marginleft + "px";
 }
