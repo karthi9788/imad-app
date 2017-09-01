@@ -6,6 +6,6 @@ function moveRight () {
     madi.style.marginleft = marginleft + "px";
 }
 madi.onclick = function () {
-    var interval = setinterval(moveRight,100);
+    var interval = setInterval(moveRight,100);
    
     };
