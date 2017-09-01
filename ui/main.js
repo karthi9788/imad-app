@@ -1,5 +1,11 @@
 console.log('Loaded!');
 var imag = document.getElementById("madi");
+var marginleft =0;
+function moveRight(){
+    marginleft = marginleft+10;
+    madi.style.marginleft = marginleft + "px";
+}
 madi.onclick = function () {
-    madi.style.marginLeft = '250px';
+    var interval = setinterval(moveRight,100);
+   
     };
