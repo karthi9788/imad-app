@@ -10,6 +10,7 @@ madi.onclick = function () {
    
     };
 var button = document.getElementById("counter");
+app.get("/counter", function (req,res){
 var counter = 0;
  button.onclick = function (){
      counter = counter + 1;
@@ -17,4 +18,4 @@ var counter = 0;
      span.innerHtml = counter.toString();
      
    
-};
+}});
