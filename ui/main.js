@@ -10,7 +10,7 @@ madi.onclick = function () {
    
     };
 var button = document.getElementById("counter");
- button.onclick = function (){n
+ button.onclick = function (){
      var span =document.getElementById("count");
      span.innerHtml = counter.toString();
      
