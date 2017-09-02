@@ -10,12 +10,16 @@ madi.onclick = function () {
    
     };
 var button = document.getElementById("counter");
- function counter (){
 var counter = 0;
+ function counter (){
+    var counter = counter + 1;
+     res.send(counter.toString());
+ }
+
  button.onclick = function (){
-     counter = counter + 1;
+    var counter = counter + 1;
      var span =document.getElementById("count");
      span.innerHtml = counter.toString();
- };}
+ };
      
    
